@@ -1,0 +1,103 @@
+.contact-container {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.contact_leftSide {
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_leftSide h1 {
+    color: #fff;
+    font-size: 3rem;
+    justify-content: center;
+    display: flex;
+}
+.contact_leftSide input {
+    margin-top: 10px;
+    width: 45%;
+    height: 35px;
+}
+.contact_leftSide textarea {
+    margin-top: 10px;
+    width: 45%;
+    height: 200px;
+}
+.contact_leftSide button {
+    margin-top: 10px;
+    width: 35%;
+    height: 35px;
+    cursor: pointer;
+}
+.contact_rightSide {
+    width: 50%;
+    height: 100%;
+    background-image: url('../../Assets/contactimg.jpg');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+}
+.contact_background {
+    display: flex;
+    width: 50%;
+    height: 50%;
+    background-color: #000;
+    justify-content: center;
+    align-items: center;
+    opacity: 1;
+}
+.contact_inputs {
+    display: flex;
+    background-color: aqua;
+    justify-content: space-evenly;
+    height: 50%;
+    width: 50%;
+} 
+.contact_inputs:focus {
+    outline: none;
+}
+.contact_input {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+.contact_input input {
+    height: 40px;
+}
+.contact_textarea {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.contact_textarea textarea {
+    height: 175px;
+    margin-bottom: 10px;
+}
+.visible {
+    color: #fff;
+    font-size: 2rem;
+    margin-top: 25px;
+}
+.notVisible {
+    display: none;
+}
+.contact_links {
+    width: 60%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.contact_linkdin {
+    height: 50px;
+}
+.contact_github {
+    height: 50px;
+}

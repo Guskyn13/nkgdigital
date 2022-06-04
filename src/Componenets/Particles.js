@@ -16,12 +16,12 @@ const ParticlesComponent = ({ props }) => {
           interactivity: {
             events: {
               onClick: {
-                enable: true, // enables the click event
-                mode: "push", // adds the particles on click
+                enable: true, 
+                mode: "push", 
               },
               onHover: {
-                enable: true, // enables the hover event
-                mode: "repulse", // make the particles run away from the cursor
+                enable: true, 
+                mode: "repulse", 
               },
             },
             modes: {
@@ -62,4 +62,4 @@ const ParticlesComponent = ({ props }) => {
       return <Particles init={particlesInit} options={options} />;
     };
 
-export default ParticlesComponent
+export default ParticlesComponent;

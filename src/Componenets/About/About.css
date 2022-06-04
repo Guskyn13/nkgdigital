@@ -1,0 +1,24 @@
+.about_leftside img {
+    width: 100%;
+    height: 100%;
+    opacity: 0.5;
+}
+.about_rightside {
+    background-color: #000;
+    /* background-image: url('../../Assets/About\ 2.jpg'); */
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.7;
+    width: 30%;
+    height: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 75px;
+    font-size: 1.5rem;
+}
+.about_rightside button {
+    justify-content: flex-start;
+}

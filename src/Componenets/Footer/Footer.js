@@ -88,8 +88,8 @@ const Footer = () => {
                                 },
                                 {
                                     title: 'Personal Site',
-                                    type: '',
-                                    path: ''
+                                    type: 'Link',
+                                    path: 'https://nathans-portfolio.netlify.app/'
                                 }
                             ]}
                         />

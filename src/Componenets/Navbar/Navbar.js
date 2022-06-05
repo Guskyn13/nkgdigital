@@ -10,7 +10,7 @@ const Navbar = () => {
             </div>
             <div className='navbar_links'>
                 <ul className='navbar_ul'>
-                    {['HOME', 'ABOUT', 'PROJECTS', 'SERVICES', 'PROCESS', 'CONTACT'].map((item) => (
+                    {['HOME', 'ABOUT', 'PROJECTS', 'SERVICES', 'CONTACT'].map((item) => (
                         <li className='navbar_li' key={item}>{item}
                             <a href={`#${item}`} />
                         </li>

@@ -11,15 +11,18 @@ overflow: hidden;
         overflow: hidden;
         display: inline-block;
         border: 3px solid #fff;
+        background-color: #000;
         margin-top: 25px;
+        transition: 0.5s;
         img {
             height: 100%;
         }
-    }
+    } 
     .project_info {
         margin-top: 1rem;
         width: 465px;
         padding: 1rem;
+        background-color: #000;
     }
     .project_title {
         font-size: 2rem;
@@ -29,10 +32,24 @@ overflow: hidden;
         font-size: 1.2rem;
         margin-top: .75rem;
     }
-    @media only screen and (max-width: 768px) {
-        .project_img {
-            height: 350px;
-        }
+    @media only screen and (max-width: 1300px) {
+    height: 400px;
+    .project_img {
+        height: 200px;
+        border-radius: 8px;
+    }
+    .project_info {
+        margin-top: 0rem;
+        width: 100%;
+    }
+    .project_title {
+        font-size: 1.5rem;
+        color: #fff;
+    }
+    .project_desc {
+        font-size: 1rem;
+        margin-top: .25rem;
+    }
     }
 `
 

@@ -36,3 +36,16 @@
     cursor: pointer;
     transition: 0.5s;
 }
+
+@media only screen and (max-width: 1300px) {
+    .navbar_container {
+        height: 75px;
+    }
+    .navbar_logo {
+        width: 300px;
+        margin-left: 50px;
+    }
+    .navbar_ul {
+        font-size: 1.1rem;
+    }
+}

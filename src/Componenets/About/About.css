@@ -1,7 +1,25 @@
+.about_container {
+    height: 100vh;
+    width: 100vw;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+.about_leftside {
+    background-color: #000;
+    width: 25%;
+    height: 75%;
+    overflow: hidden;
+}
 .about_leftside img {
     width: 100%;
     height: 100%;
     opacity: 0.5;
+}
+.sectionTitle {
+    color: #fff;
+    padding-bottom: 25px;
 }
 .about_rightside {
     background-color: #000;
@@ -21,4 +39,18 @@
 }
 .about_rightside button {
     justify-content: flex-start;
+}
+
+@media only screen and (max-width: 1300px) {
+    .about_container {
+        height: 100vh;
+        margin-top: 3rem;
+    }
+    .about_leftside {
+        width: 30%;
+    }
+    .about_rightside {
+        font-size: 1.2rem;
+        width: 35%;
+    }
 }

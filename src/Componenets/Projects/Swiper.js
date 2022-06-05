@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 import ProjectCard from './ProjectCard'
 import { Swiper, SwiperSlide } from 'swiper/react'
@@ -15,11 +16,10 @@ SwiperCore.use([Navigation]);
 
 const SwiperStyle = styled.div`
 padding: 5rem 0;
+
 .swiper {
     padding-top: 50px;
     padding-bottom: 50px;
-    width: 100%;
-    background-color: #000;
 }
 .swiper-slide {
     background-position: center;
@@ -68,11 +68,39 @@ padding: 5rem 0;
     .swiper-button-next::after {
         font-size: 2rem;
     }
+
+    @media only screen and (max-width: 1300px) {
+    padding: 2rem 0;
+
+    .swiper {
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+    .swiper-slide {
+        width: 200px;
+    }
+    .swiper-button-prev,
+    .swiper-button-next {
+        height: 25px;
+        width: 25px;
+        right: 200px;
+        top: 25px;
+        border-radius: 4px;
+    }
+    .swiper-button-next {
+        right: 150px;
+    }
+    .swiper-button-prev::after,
+    .swiper-button-next::after {
+        font-size: 1rem;
+    }
+    }
 `
 
 export default function SwiperSection() {
     return (
         <SwiperStyle>
+            <div className="project_background"></div>
             <div className='project_swiperContainer'>
                 <Swiper
                     slidesPerView={"auto"}
@@ -88,7 +116,7 @@ export default function SwiperSection() {
                         if (i >= 5) return;
                         return (
                             <SwiperSlide key={i}>
-                                <ProjectCard 
+                                <ProjectCard
                                     img={project.img}
                                     title={project.name}
                                     desc={project.desc}

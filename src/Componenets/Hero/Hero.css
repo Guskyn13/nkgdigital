@@ -1,15 +1,21 @@
+.background {
+    background-image: url(../../Assets/bg1.jpg);
+    height: calc(100vh - 125px);
+    width: 100%;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 0.4;
+    background-attachment: fixed;
+    position: absolute;
+}
 .hero_container {
     color: #fff;
     height: calc(100vh - 125px);
     width: 100%;
     display: flex;
     justify-content: space-between;
-    background-image: url(../../Assets/bg1.jpg);
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.4;
-    background-attachment: fixed;
+    z-index: 2;
 }
 .hero_info {
     width: 100%;
@@ -17,6 +23,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 2;
 }
 .hero_info h1 {
     font-size: 8rem;
@@ -40,4 +47,24 @@
 .hero_border2 {
     border-right: 3px solid #000;
     padding-right: 30px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .background {
+        height: calc(100vh - 75px);
+    }
+    .hero_info h1 {
+        font-size: 5rem;
+        color: #fff;
+        border-bottom: 3px solid #fff;
+    }
+    .hero_skills {
+        font-size: 1.5rem;
+        width: 60%;
+        color: #fff;
+    }
+    .hero_border1,
+    .hero_border2 {
+        border-right: 3px solid #fff;
+    }
 }

@@ -1,8 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
-import linkdin from '../../Assets/linkdin.png'
-import github from '../../Assets/github.png'
+import {linkdin, github} from '../../Assets'
 
 const Contact = () => {
     const [firstName, setFirstName] = useState("");

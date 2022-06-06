@@ -37,11 +37,11 @@
 .contact_rightSide {
     width: 50%;
     height: 100%;
-    background-image: url('../../Assets/contactimg.jpg');
+    background-image: url('../../Assets/contactImg.jpg');
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    opacity: 0.4;
+    opacity: 0.8;
 }
 .contact_background {
     display: flex;
@@ -100,4 +100,16 @@
 }
 .contact_github {
     height: 50px;
+}
+
+@media only screen and (max-width: 1300px) {
+    .contact_leftSide input {
+        width: 80%;
+    }
+    .contact_leftSide textarea {
+        width: 80%;
+    }
+    .contact_rightSide {
+        width: 40%;
+    }
 }

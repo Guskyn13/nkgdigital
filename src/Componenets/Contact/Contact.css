@@ -19,23 +19,23 @@
     display: flex;
 }
 .contact_leftSide input {
-    margin-top: 10px;
-    width: 45%;
-    height: 35px;
+    margin-top: 15px;
+    width: 75%;
+    height: 45px;
 }
 .contact_leftSide textarea {
-    margin-top: 10px;
-    width: 45%;
+    margin-top: 15px;
+    width: 75%;
     height: 200px;
 }
 .contact_leftSide button {
-    margin-top: 10px;
+    margin-top: 15px;
     width: 35%;
     height: 35px;
     cursor: pointer;
 }
 .contact_rightSide {
-    width: 50%;
+    width: 40%;
     height: 100%;
     background-image: url('../../Assets/contactImg.jpg');
     background-position: center;
@@ -103,6 +103,12 @@
 }
 
 @media only screen and (max-width: 1300px) {
+    .contact-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
     .contact_leftSide input {
         width: 80%;
     }

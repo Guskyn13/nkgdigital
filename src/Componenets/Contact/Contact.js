@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
-import {linkdin, github} from '../../Assets'
+import { linkdin, github } from '../../Assets'
 
 const Contact = () => {
     const [firstName, setFirstName] = useState("");
@@ -63,7 +63,7 @@ const Contact = () => {
 
 
                 <div className='contact_rightSide'>
-                    
+
                 </div>
             </div>
         </>

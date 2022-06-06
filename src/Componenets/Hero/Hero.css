@@ -27,8 +27,8 @@
 }
 .hero_info h1 {
     font-size: 8rem;
-    color: #000;
-    border-bottom: 3px solid #000;
+    color: #fff;
+    border-bottom: 3px solid #fff;
 }
 .hero_skills {
     display: flex;
@@ -36,17 +36,37 @@
     height: 75px;
     width: 35%;
     justify-content: space-evenly;
-    color: #000;
+    color: #fff;
     font-size: 2rem;
     font-weight: 600;
 }
 .hero_border1 {
-    border-right: 3px solid #000;
+    border-right: 3px solid #fff;
     padding-right: 30px;
 }
 .hero_border2 {
-    border-right: 3px solid #000;
+    border-right: 3px solid #fff;
     padding-right: 30px;
+}
+
+@media only screen and (max-width: 2000px) {
+    .hero_info h1 {
+        font-size: 7.5rem;
+    }
+    .hero_skills {
+        font-size: 1.5em;
+        width: 45%;
+    }
+}
+
+@media only screen and (max-width: 1700px) {
+    .hero_info h1 {
+        font-size: 7rem;
+    }
+    .hero_skills {
+        font-size: 1.5em;
+        width: 50%;
+    }
 }
 
 @media only screen and (max-width: 1300px) {
@@ -68,3 +88,4 @@
         border-right: 3px solid #fff;
     }
 }
+

@@ -10,7 +10,7 @@ export { default as serviceApp } from '../Assets/serviceApp.png';
 export { default as serviceWebsite } from '../Assets/serviceWebsite.png';
 export { default as linkdin } from '../Assets/linkdin.png';
 export { default as github } from '../Assets/github.png';
-// export { default as } from '../Assets/';
+export { default as contactImg } from '../Assets/contactImg.jpg';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';

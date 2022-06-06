@@ -1,6 +1,4 @@
-import {portfolioImg, ecommImg} from '../Assets'
-import p4 from '../Assets/p4.jpg'
-import p5 from '../Assets/p5.jpg'
+import {portfolioImg, ecommImg, droneImg, metamask, cryptoquery} from '../Assets'
 
 const projects = [
     {
@@ -19,23 +17,23 @@ const projects = [
     },
     {
         id: 3,
-        name: 'Project 3',
+        name: 'Dronography',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, lorem non bibendum auctor, enim quam laoreet mi, eu tincidunt augue ipsum in ipsum. Quisque.',
-        img: p3,
+        img: droneImg,
         github: ''
     },
     {
         id: 4,
-        name: 'Project 4',
+        name: 'Metamask Wallet',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, lorem non bibendum auctor, enim quam laoreet mi, eu tincidunt augue ipsum in ipsum. Quisque.',
-        img: p4,
+        img: metamask,
         github: ''
     },
     {
         id: 5,
-        name: 'Project 5',
+        name: 'Crypto Query',
         desc: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce ullamcorper, lorem non bibendum auctor, enim quam laoreet mi, eu tincidunt augue ipsum in ipsum. Quisque.',
-        img: p5,
+        img: cryptoquery,
         github: ''
     },
 ]

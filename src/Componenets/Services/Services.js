@@ -23,7 +23,7 @@ const Services = () => {
               <span>sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada</span>
             </div>
             <div className="services-col4">
-              <h4>Drone Photography</h4>
+              <h4>Drone Photo</h4>
               <span>sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada</span>
             </div>
           </div>

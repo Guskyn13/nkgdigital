@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import styled from 'styled-components'
-import randomPic from '../../Assets/origin.jpg'
+import { Logo } from '../../Assets'
 
 const ProjectCardStyles = styled.div`
 height: 500px;
@@ -54,7 +54,7 @@ overflow: hidden;
 `
 
 export default function ProjectCard({
-    img = randomPic,
+    img = Logo,
     title = 'Project Name',
     desc = 'Loreum Ipsum'
 }) {

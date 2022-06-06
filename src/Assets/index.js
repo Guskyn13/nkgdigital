@@ -1,11 +1,11 @@
 export { default as Logo } from '../Assets/logo.svg';
-export { default as parkPhoto } from '../Assets/parkPhoto.JPG';
+export { default as parkPhoto } from '../Assets/parkPhoto.jpg';
 export { default as portfolioImg } from '../Assets/portfolioImg.jpg';
 export { default as ecommImg } from '../Assets/ecommImg.png';
-// export { default as } from '../Assets/';
-// export { default as } from '../Assets/';
-// export { default as } from '../Assets/';
-// export { default as } from '../Assets/';
+export { default as droneImg } from '../Assets/droneImg.jpg';
+export { default as metamask } from '../Assets/metamask.svg';
+export { default as cryptoquery } from '../Assets/cryptoquery.jpg';
+export { default as serviceBackground } from '../Assets/serviceBackgroundImg.jpg';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';

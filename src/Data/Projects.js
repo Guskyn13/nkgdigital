@@ -1,6 +1,4 @@
-import portfolioImg from '../Assets/portfolioImg.jpg'
-import ecommImg from '../Assets/ecommImg.png'
-import p3 from '../Assets/p3.jpg'
+import {portfolioImg, ecommImg} from '../Assets'
 import p4 from '../Assets/p4.jpg'
 import p5 from '../Assets/p5.jpg'
 

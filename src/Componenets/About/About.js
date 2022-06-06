@@ -1,13 +1,13 @@
 import React from 'react';
 import './About.css'
-import img from '../../Assets/About1.jpg'
+import { parkPhoto } from '../../Assets'
 import SectionTitle from '../SectionTitle'
 
 const About = () => {
     return (
         <div className='about_container'>
             <div className='about_leftside'>
-                <img src={img} />
+                <img src={parkPhoto} />
             </div>
             <div className='about_rightside'>
                 <div className='sectionTitle'>

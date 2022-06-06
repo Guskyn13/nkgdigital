@@ -1,0 +1,12 @@
+export { default as Logo } from '../Assets/logo.svg';
+export { default as parkPhoto } from '../Assets/parkPhoto.JPG';
+export { default as portfolioImg } from '../Assets/portfolioImg.jpg';
+export { default as ecommImg } from '../Assets/ecommImg.png';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';
+// export { default as } from '../Assets/';

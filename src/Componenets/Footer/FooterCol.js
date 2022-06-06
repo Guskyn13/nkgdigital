@@ -3,15 +3,21 @@ import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 
 const ColumnStyle = styled.div`
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
     .heading {
-        font-size: 2.4rem;
-        margin-bottom: 2rem;
-    }
-    li {
+        font-size: 1.75rem;
         margin-bottom: 1rem;
     }
+    li {
+        margin-bottom: 0.5rem;
+    }
     a {
-        font-size: 1.8rem;
+        font-size: 1.25rem;
+        text-decoration: none;
+        color: #fff;
     }
 `;
 

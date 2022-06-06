@@ -4,14 +4,27 @@ import styled from 'styled-components'
 import FooterCol from './FooterCol'
 
 const FooterStyle = styled.div`
-    padding-top: 5rem;
-    color: white;
-    background-color: #000;
+padding: 1rem 0;
+color: white;
+background-color: #000;
+opacity: 0.85;
     .footer_container {
         display: flex;
     }
     .footer_col1 {
         flex: 2;
+        width: 80%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .footer_col1 h1 {
+        font-size: 3rem;
+        padding-bottom: 1rem;
+    }
+    .footer_col1 p {
+        font-size: 1.5rem;
     }
     .footer_col2,
     .footer_col3,
@@ -62,7 +75,7 @@ const Footer = () => {
                             heading = 'Contact Info'
                             links = {[
                                 {
-                                    title: '(850) 556-3452',
+                                    title: 'Phone',
                                     path: 'tel:8505563452'
                                 },
                                 {

@@ -2,7 +2,7 @@ import React from 'react'
 import './Services.css'
 import SectionTitle from '../SectionTitle'
 import ServiceItem from './ServiceItem'
-import { serviceApp, serviceWebsite } from '../../Assets'
+import { serviceApp, serviceWebsite, serviceHosting, serviceDrone } from '../../Assets'
 
 const Services = () => {
   return (
@@ -12,26 +12,35 @@ const Services = () => {
         <SectionTitle subheading='What I can do for you' heading='Services' />
         <div className="services-servicesContainer">
           <div className="services-columns">
+
             <div className="services-col1">
+              <img src={serviceApp} alt="" className='service-icon' />
               <ServiceItem
-                icon={serviceApp}
                 title='Custom App Dev'
               />
             </div>
+
             <div className="services-col2">
+              <img src={serviceWebsite} alt="service website" />
               <ServiceItem
-                icon={serviceWebsite}
                 title='Web Design'
               />
             </div>
+
             <div className="services-col3">
-              <h4>Web Hosting</h4>
-              <span>sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada</span>
+              <img src={serviceHosting} alt="service hosting" />
+              <ServiceItem
+                title="Web Hosting"
+              />
             </div>
+
             <div className="services-col4">
-              <h4>Drone Photo</h4>
-              <span>sit amet mauris commodo quis imperdiet massa tincidunt nunc pulvinar sapien et ligula ullamcorper malesuada</span>
+              <img src={serviceDrone} alt="service drone" />
+              <ServiceItem
+                title="Drone Photo"
+              />
             </div>
+
           </div>
         </div>
       </div>

@@ -11,37 +11,35 @@ const Services = () => {
       <div className='services-container'>
         <SectionTitle subheading='What I can do for you' heading='Services' />
         <div className="services-servicesContainer">
-          <div className="services-columns">
 
             <div className="services-col1">
-              <img src={serviceApp} alt="" className='service-icon' />
+              <img src={serviceApp} alt="service app" className='service-icon' />
               <ServiceItem
                 title='Custom App Dev'
               />
             </div>
 
             <div className="services-col2">
-              <img src={serviceWebsite} alt="service website" />
+              <img src={serviceWebsite} alt="service website" className='service-icon' />
               <ServiceItem
                 title='Web Design'
               />
             </div>
 
             <div className="services-col3">
-              <img src={serviceHosting} alt="service hosting" />
+              <img src={serviceHosting} alt="service hosting" className='service-icon' />
               <ServiceItem
                 title="Web Hosting"
               />
             </div>
 
             <div className="services-col4">
-              <img src={serviceDrone} alt="service drone" />
+              <img src={serviceDrone} alt="service drone" className='service-icon' />
               <ServiceItem
                 title="Drone Photo"
               />
             </div>
 
-          </div>
         </div>
       </div>
     </>

@@ -15,27 +15,29 @@
     width: 100%;
     color: #fff;
     z-index: 2;
-    padding-top: 4rem;
+    padding-top: 6rem;
+    display: flex;
+    flex-direction: column;
 }
 .services-servicesContainer {
-    height: 300px;
+    height: 400px;
     width: 100%;
     display: flex;
     align-items: center;
-    padding: 4rem 0;
-    margin-top: 3rem;
-    background-color: rgba(255, 255, 255, 0.8);
-}
-.services-columns {
-    display: flex;
     justify-content: space-evenly;
+    padding: 4rem 0;
+    margin-top: 6rem;
+    background-color: rgba(255, 255, 255, 0.7);
+}
+.service-icon {
+    width: 100px;
 }
 .services-col1,
 .services-col2,
 .services-col3,
 .services-col4 {
     width: 350px;
-    height: 150px;
+    height: 250px;
     display: flex;
     flex-direction: column;
     align-items: center;

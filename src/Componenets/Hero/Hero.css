@@ -89,3 +89,31 @@
     }
 }
 
+@media only screen and (max-width: 800px) {
+    .hero_info h1 {
+        font-size: 6rem;
+    }
+    .hero_skills {
+        width: 90%;
+    }
+    .hero_border1,
+    .hero_border2 {
+        border: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .hero_info h1 {
+        font-size: 3rem;
+    }
+    .hero_skills {
+        font-size: 1.5rem;
+        width: 100vw;
+        height: 200px;
+        flex-direction: column;
+    }
+    .hero_border1,
+    .hero_border2 {
+        border: none;
+    }
+}

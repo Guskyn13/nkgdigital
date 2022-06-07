@@ -66,3 +66,22 @@
         font-size: 1.1rem;
     }
 }
+
+@media only screen and (max-width: 800px) {
+    .navbar_logo {
+        width: 250px;
+        margin-left: 0;
+    }
+    .navbar_links {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .navbar_logo {
+        display: none;
+    }
+    .navbar_links {
+        display: none;
+    }
+}

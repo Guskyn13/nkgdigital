@@ -1,6 +1,6 @@
 import React from 'react';
 import './About.css'
-import { parkPhoto } from '../../Assets'
+import { parkPhoto, rockies } from '../../Assets'
 import SectionTitle from '../SectionTitle'
 
 const About = () => {
@@ -9,7 +9,7 @@ const About = () => {
             <div className='about_leftside'>
                 <img src={parkPhoto} />
             </div>
-            <div className='about_rightside'>
+            <div className='about_middle'>
                 <div className='sectionTitle'>
                     <SectionTitle
                         subheading="Let me introduce myself"
@@ -22,6 +22,7 @@ const About = () => {
                     <button>Read More</button>
                 </div>
             </div>
+            <div className='about_rightside' />
         </div>
     )
 }

@@ -13,7 +13,7 @@ export { default as github } from '../Assets/github.png';
 export { default as contactImg } from '../Assets/contactImg.jpg';
 export { default as serviceHosting } from '../Assets/hosting.png';
 export { default as serviceDrone } from '../Assets/serviceDrone.png';
-// export { default as } from '../Assets/';
+export { default as rockies } from '../Assets/rockies.jpg';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';
 // export { default as } from '../Assets/';

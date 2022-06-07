@@ -25,6 +25,7 @@
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    overflow: hidden;
     padding: 4rem 0;
     margin-top: 6rem;
     background-color: rgba(255, 255, 255, 0.7);
@@ -57,19 +58,27 @@ span {
 }
 
 @media only screen and (max-width: 1300px) {
+    .services-container {
+        padding-top: 2rem;
+    }
     .services-servicesContainer {
-        padding: 2rem 0;
+        height: 250px;
+        margin-top: 4rem;
     }
     .services-columns {
         display: flex;
         justify-content: space-evenly;
     }
+    .service-icon {
+        width: 50px;
+        padding-bottom: 1rem;
+    }
     .services-col1,
     .services-col2,
     .services-col3,
     .services-col4 {
-        width: 20%;
-        height: 150px;
+        width: 25%;
+        height: 250px;
         display: flex;
         flex-direction: column;
         align-items: center;

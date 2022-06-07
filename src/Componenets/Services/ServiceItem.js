@@ -18,19 +18,15 @@ text-align: center;
 
 
 @media only screen and (max-width: 1300px) {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: purple;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
 
     .servicesItem__title {
-        color: #000;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        font-size: 1.5rem;
     }
     span {
-        font-size: 1.25rem;
+        font-size: 1.2rem;
         display: flex;
         justify-content: center;
         align-items: center;

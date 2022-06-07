@@ -35,7 +35,8 @@ overflow: hidden;
     @media only screen and (max-width: 1300px) {
     height: 400px;
     .project_img {
-        height: 200px;
+        height: 150px;
+        width: 100%;
         border-radius: 8px;
     }
     .project_info {
@@ -45,6 +46,7 @@ overflow: hidden;
     .project_title {
         font-size: 1.5rem;
         color: #fff;
+        padding-bottom: 1rem;
     }
     .project_desc {
         font-size: 1rem;

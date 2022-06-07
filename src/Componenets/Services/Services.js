@@ -16,6 +16,7 @@ const Services = () => {
               <img src={serviceApp} alt="service app" className='service-icon' />
               <ServiceItem
                 title='Custom App Dev'
+                desc="Solve specific problems you are facing with testing and maintainability"
               />
             </div>
 
@@ -23,6 +24,7 @@ const Services = () => {
               <img src={serviceWebsite} alt="service website" className='service-icon' />
               <ServiceItem
                 title='Web Design'
+                desc='UI/UX design including the blueprints of the website '
               />
             </div>
 
@@ -30,6 +32,7 @@ const Services = () => {
               <img src={serviceHosting} alt="service hosting" className='service-icon' />
               <ServiceItem
                 title="Web Hosting"
+                desc='Deploy and host your website with the domain of your choice'
               />
             </div>
 
@@ -37,6 +40,7 @@ const Services = () => {
               <img src={serviceDrone} alt="service drone" className='service-icon' />
               <ServiceItem
                 title="Drone Photo"
+                desc='Capture unimaginable photos with drones for eye-catching images '
               />
             </div>
 

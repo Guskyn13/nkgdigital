@@ -17,8 +17,7 @@ function useMouse() {
             });
         }
 
-        document.addEventListener("mousemove", handle);
-        return () => document.removeEventListener("mousemove", handle)
+        document.addEventListener("click", handle);
     });
 
     return mousePosition;

@@ -49,22 +49,62 @@
 
 }
 .about_buttons {
-    height: 75px;
+    height: 175px;
     width: 75%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    flex-direction: column;
 }
 .about_buttons button {
     height: 50px;
-    width: 100px;
-    background-color: #fff;
+    width: 200px;
     cursor: pointer;
-    border-radius: 15px;
-    transition: 0.5s;
+    border-radius: 3px;
+    /* transition: 0.5s; */
+    font-size: 1.15rem;
+    text-transform: uppercase;
+    /* background-color: transparent; */
 }
-.about_buttons button:hover {
-    background: purple;
+.about_ripple {
+    appearance: none;
+    position: relative;
+    background-color: transparent;
+    isolation: isolate;
+    overflow: hidden;
+    color: hsl(200, 100%, 65%);
+    border: 1px solid currentColor;
+}
+.about_ripple::before {
+    content: "";
+    position: absolute;
+    /* top: var(--y);
+    left: var(--x); */
+    transform: translate(-50%, -50%) scale(0);
+    transition: transform 750ms;
+    z-index: -1;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    background: #fff;
+    opacity: 0.8;
+}
+.pulse::before {
+    animation: pulse 500ms;
+    /* transform: translate(-50%, -50%) scale(0); */
+    /* transition: transform 750ms; */
+    /* background-color: #fff; */
+}
+.pulse2 {
+    /* animation: pulse 500ms; */
+    background-color: #fff;
+}
+
+@keyframes pulse {
+    100% {
+        transform: translate(-50%, -50%) scale(1);
+        opacity: 0;
+    }
 }
 
 @media only screen and (max-width: 1300px) {

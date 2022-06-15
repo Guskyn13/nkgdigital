@@ -12,8 +12,8 @@ import SectionTitle from '../SectionTitle'
 
 function useMouse(e) {
     const [mousePosition, setMousePosition] = useState({
-        x: e.pageX,
-        y: e.pageY
+        // x: e.pageX,
+        // y: e.pageY
     });
 
     useEffect(() => {

@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { linkdin, github } from '../../Assets'
+import SectionTitle from '../SectionTitle'
 
 const Contact = () => {
     const [firstName, setFirstName] = useState("");
@@ -42,6 +43,7 @@ const Contact = () => {
         <>
             <div className='contact-container' id="contact-form">
                 <div className='contact_leftSide'>
+                    <SectionTitle />
                     <h1>CONTACT</h1>
                     <input type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
                     <input type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />

@@ -44,31 +44,22 @@ const Contact = () => {
         <>
             <div className='contact-background'></div>
             <div className='contact-container' id="contact-form">
-                <div className='contact_leftSide'>
-                    <SectionTitle
-                        subheading="Lets get in touch"
-                        heading="Contact"
-                    />
-                    <div className='name'>
-                        <input className='name-input' type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
-                        <input className='name-input' type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
-                    </div>
-                    <div className='email'>
-                        <input className='email-input' type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
-                        <input className='email-input' type="text" placeholder='Phone (Optional)' value={phone} onChange={e => setPhone(e.target.value)} />
-                        <textarea placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                    </div>
-
-                    <button onClick={submit}>Send Message</button>
-                    <span className={emailSent ? 'visible' : 'notVisible'}>Thank you for your message, we will be in touch shortly.</span>
-
-                    <div className='contact_links'>
-                        <a href="https://www.linkedin.com/in/nathankgusky/">
-                            <img src={linkdin} className='contact_linkdin' />
-                        </a>
-                        <a href='https://github.com/Guskyn13'>
-                            <img src={github} className='contact_github' />
-                        </a>
+                <div className='contact-info'>
+                    <div className='contact-leftside'>
+                        <SectionTitle
+                            subheading="Lets get in touch"
+                            heading="Contact"
+                        />
+                        <h2>Email: Nathangusky13@gmail.com</h2>
+                        <h2>Phone: (850) 556 - 3452</h2>
+                        <div className='contact-links'>
+                            <a href="https://www.linkedin.com/in/nathankgusky/">
+                                <img src={linkdin} className='contact-icon' />
+                            </a>
+                            <a href='https://github.com/Guskyn13'>
+                                <img src={github} className='contact-icon' />
+                            </a>
+                        </div>
                     </div>
 
                     <div className='contact-rightside'>

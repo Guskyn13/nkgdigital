@@ -1,20 +1,34 @@
 .contact-background {
     width: 100%;
     height: 100vh;
+<<<<<<< HEAD
+=======
+    position: absolute;
+>>>>>>> b4f380e91659045960e5c647cd47de1b6a2ab5b0
     background-image: url('../../Assets/contactImg.jpg');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+<<<<<<< HEAD
     position: absolute;
     opacity: 0.5;
     z-index: -1;
+=======
+    opacity: 0.8;
+>>>>>>> b4f380e91659045960e5c647cd47de1b6a2ab5b0
 }
 .contact-container {
     height: 100vh;
     width: 100%;
     display: flex;
+<<<<<<< HEAD
     justify-content: center;
     align-items: center;
+=======
+    justify-content: space-evenly;
+    color: #fff;
+    flex-direction: row;
+>>>>>>> b4f380e91659045960e5c647cd47de1b6a2ab5b0
 }
 .contact_leftSide {
     width: 30%;
@@ -38,11 +52,21 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    z-index: 5;
 }
+<<<<<<< HEAD
 .email-input {
     width: 100%;
 }
 input {
+=======
+.contact_rightside {
+    display: flex;
+}
+.contact_rightside input {
+    margin-top: 15px;
+    width: 75%;
+>>>>>>> b4f380e91659045960e5c647cd47de1b6a2ab5b0
     height: 45px;
     padding: 25px 0;
     margin: 10px;
@@ -59,7 +83,6 @@ input {
     height: 35px;
     cursor: pointer;
 }
-
 .contact_inputs {
     display: flex;
     background-color: aqua;
@@ -112,12 +135,17 @@ input {
     }
     .contact-container {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
         justify-content: center;
         align-items: center;
     }
-    .contact_leftSide input {
-        width: 80%;
+    .contact-info {
+        width: 100%;
+        height: 90%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
     }
     .contact_leftSide textarea {
         width: 80%;

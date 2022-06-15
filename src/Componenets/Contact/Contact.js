@@ -71,11 +71,21 @@ const Contact = () => {
                         </a>
                     </div>
 
-                </div>
-
-
-                <div className='contact_rightSide'>
-
+                    <div className='contact-rightside'>
+                        <div className='contact-name'>
+                            <input type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
+                            <input type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
+                        </div>
+                        <div className='contact-email'>
+                            <input type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
+                            <input type="text" placeholder='Phone (Optional)'></input>
+                        </div>
+                        <div className='contact-text'>
+                            <textarea className='textarea' placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                            <button onClick={submit}>Send Message</button>
+                            <span className={emailSent ? 'visible' : 'notVisible'}>Thank you for your message, we will be in touch shortly.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>

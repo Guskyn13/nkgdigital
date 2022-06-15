@@ -3,10 +3,17 @@ import './About.css'
 import { parkPhoto } from '../../Assets'
 import SectionTitle from '../SectionTitle'
 
-function useMouse() {
+// function mouseProp(e, element) {
+//     let posX = e.offSetX;
+//     let posY = e.offSetY;
+
+//     console.log(posX);
+// }
+
+function useMouse(e) {
     const [mousePosition, setMousePosition] = useState({
-        x: null,
-        y: null
+        // x: e.pageX,
+        // y: e.pageY
     });
 
     useEffect(() => {
@@ -15,6 +22,7 @@ function useMouse() {
                 x: e.pageX,
                 y: e.pageY
             });
+            console.log(mousePosition);
         }
 
         document.addEventListener("click", handle);
@@ -24,11 +32,10 @@ function useMouse() {
 }
 
 const About = () => {
-    const [pulseworks, setPulseworks] = useState(false);
-    const [pulsereadmore, setPulsereadmore] = useState(false);
-
     const { x, y } = useMouse();
 
+    const [pulseworks, setPulseworks] = useState(false);
+    const [pulsereadmore, setPulsereadmore] = useState(false);
     const [worksMouseX, setWorksMouseX] = useState("");
     const [worksMouseY, setWorksMouseY] = useState("");
     const [readmoreMouseX, setReadmoreMouseX] = useState("");
@@ -36,11 +43,12 @@ const About = () => {
 
     const handleClick = () => {
         setWorksMouseX(x + "px");
-        // setWorksMouseY(y + "px");
-        console.log(worksMouseX);
+        setWorksMouseY(y + "px");
         setPulseworks(current => !current);
     }
     const handleClick2 = () => {
+        setReadmoreMouseX(x)
+        setReadmoreMouseY(y + "px")
         setPulsereadmore(current => !current);
     }
 
@@ -61,11 +69,12 @@ const About = () => {
                     </div>
                     <p>You are meeting Nathan, a freelance website developer and designer from Florida. Creator of professional pages of all sorts. Would love to help you turn those ideas into a beautiful reality.</p>
                     <div className="about_buttons">
-                        <button className={`about_ripple ${pulseworks ? 'pulse' : ''}`} onClick={handleClick}>Works</button>
-                        <button className={`about_ripple ${pulsereadmore ? 'pulse2' : ''}`} onClick={handleClick2}>Read More</button>
+                        <button id='workBtn' className='about_ripple' onClick={handleClick}>Works</button>
+                        <button id='workBtn' className='about_ripple' onClick={handleClick2}>Read More</button>
+
                     </div>
-                <p>Mouse X is {x}</p>
-                <p>Mouse Y is {y}</p>
+                        <p>Position X = {x}</p>
+                        <p>Position Y = {y}</p>
                 </div>
                 <div className='about_rightside' />
             </div>

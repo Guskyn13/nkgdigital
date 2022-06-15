@@ -18,7 +18,7 @@ function useMouse() {
         }
 
         document.addEventListener("click", handle);
-    });
+        });
 
     return mousePosition;
 }

@@ -1,31 +1,56 @@
+.contact-background {
+    width: 100%;
+    height: 100vh;
+    background-image: url('../../Assets/contactImg.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: absolute;
+    opacity: 0.5;
+    z-index: -1;
+}
 .contact-container {
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    align-items: center;
 }
 .contact_leftSide {
     width: 30%;
-    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #fff;
+}
+.name {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.name-input {
+    width: 400px;
+}
+.email {
+    width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.contact_leftSide h1 {
-    color: #fff;
-    font-size: 3rem;
-    justify-content: center;
-    display: flex;
+.email-input {
+    width: 100%;
 }
-.contact_leftSide input {
-    margin-top: 15px;
-    width: 75%;
+input {
     height: 45px;
+    padding: 25px 0;
+    margin: 10px;
+    width: 100%;
 }
 .contact_leftSide textarea {
     margin-top: 15px;
-    width: 75%;
+    width: 100%;
     height: 200px;
 }
 .contact_leftSide button {
@@ -34,41 +59,16 @@
     height: 35px;
     cursor: pointer;
 }
-.contact_rightSide {
-    width: 40%;
-    height: 100%;
-    background-image: url('../../Assets/contactImg.jpg');
-    background-position: center;
-    background-size: contain;
-    background-repeat: no-repeat;
-    opacity: 0.8;
-}
-.contact_background {
-    display: flex;
-    width: 50%;
-    height: 50%;
-    background-color: #000;
-    justify-content: center;
-    align-items: center;
-    opacity: 1;
-}
+
 .contact_inputs {
     display: flex;
     background-color: aqua;
-    justify-content: space-evenly;
+    /* justify-content: space-evenly; */
     height: 50%;
     width: 50%;
 } 
 .contact_inputs:focus {
     outline: none;
-}
-.contact_input {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-}
-.contact_input input {
-    height: 40px;
 }
 .contact_textarea {
     display: flex;
@@ -84,6 +84,8 @@
     color: #fff;
     font-size: 2rem;
     margin-top: 25px;
+    border: none;
+    outline: none;
 }
 .notVisible {
     display: none;
@@ -96,13 +98,18 @@
     cursor: pointer;
 }
 .contact_linkdin {
-    height: 50px;
+    height: 75px;
 }
 .contact_github {
-    height: 50px;
+    height: 75px;
 }
 
+
+
 @media only screen and (max-width: 1300px) {
+    .contact-background {
+        opacity: 1;
+    }
     .contact-container {
         display: flex;
         flex-direction: column;
@@ -115,7 +122,54 @@
     .contact_leftSide textarea {
         width: 80%;
     }
-    .contact_rightSide {
-        width: 40%;
+    .contact_leftSide {
+        width: 50%;
+    }
+    .name {
+        width: 80%;
+    }
+    .name-input {
+        width: 300px;
+        height: 35px;
+    }
+    .contact_linkdin {
+        height: 35px;
+    }
+    .contact_github {
+        height: 35px;
+    }
+    .contact_links {
+        width: 75%;
+        margin: 35px;
+    }
+    input {
+        height: 25px;
+        padding: 18px 0;
+        margin: 5px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .contact_leftSide input {
+        margin-top: 8px;
+        width: 90%;
+        height: 35px;
+    }
+    .contact_leftSide textarea {
+        margin-top: 8px;
+        width: 90%;
+    }
+    .contact_leftSide button {
+        width: 75%;
+        height: 25px;
+    }
+    .contact_links {
+        width: 90%;
+    }
+    .contact_linkdin {
+        height: 35px;
+    }
+    .contact_github {
+        height: 35px;
     }
 }

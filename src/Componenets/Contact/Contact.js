@@ -2,11 +2,13 @@ import React, { useState } from 'react'
 import './Contact.css'
 import emailjs from '@emailjs/browser';
 import { linkdin, github } from '../../Assets'
+import SectionTitle from '../SectionTitle';
 
 const Contact = () => {
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
     const [email, setEmail] = useState("");
+    const [phone, setPhone] = useState("");
     const [message, setMessage] = useState("");
     const [emailSent, setEmailSent] = useState(false);
 
@@ -40,13 +42,23 @@ const Contact = () => {
 
     return (
         <>
+            <div className='contact-background'></div>
             <div className='contact-container' id="contact-form">
                 <div className='contact_leftSide'>
-                    <h1>CONTACT</h1>
-                    <input type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
-                    <input type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
-                    <input type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
-                    <textarea placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                    <SectionTitle
+                        subheading="Lets get in touch"
+                        heading="Contact"
+                    />
+                    <div className='name'>
+                        <input className='name-input' type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
+                        <input className='name-input' type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
+                    </div>
+                    <div className='email'>
+                        <input className='email-input' type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
+                        <input className='email-input' type="text" placeholder='Phone (Optional)' value={phone} onChange={e => setPhone(e.target.value)} />
+                        <textarea placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                    </div>
+
                     <button onClick={submit}>Send Message</button>
                     <span className={emailSent ? 'visible' : 'notVisible'}>Thank you for your message, we will be in touch shortly.</span>
 

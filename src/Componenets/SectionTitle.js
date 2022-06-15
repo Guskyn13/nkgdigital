@@ -3,6 +3,7 @@ import styled from 'styled-components';
 
 const SectionTitleStyle = styled.div`
 overflow: hidden;
+padding-bottom: 25px;
     text-align: center;
     p {
         font-size: 2rem;

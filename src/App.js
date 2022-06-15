@@ -1,13 +1,16 @@
 import './App.css';
 import ParticlesComponent from './Componenets/Particles';
 import { Navbar, Hero, About, Projects, Services, Contact, Footer } from './Componenets';
-import {Routes, Route } from 'react-router-dom'
+import { Routes, Route } from 'react-router-dom'
 
 function App() {
   return (
     <>
+    <div className='scroll-tracker'></div>
       <div className="App">
-        <ParticlesComponent />
+        <div className='particles'>
+          <ParticlesComponent />
+        </div>
         <Navbar />
         <Hero />
         <About />

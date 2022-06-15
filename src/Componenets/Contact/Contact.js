@@ -41,31 +41,41 @@ const Contact = () => {
 
     return (
         <>
+            <div className='contact-background'></div>
             <div className='contact-container' id="contact-form">
-                <div className='contact_leftSide'>
-                    <SectionTitle />
-                    <h1>CONTACT</h1>
-                    <input type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
-                    <input type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
-                    <input type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
-                    <textarea placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
-                    <button onClick={submit}>Send Message</button>
-                    <span className={emailSent ? 'visible' : 'notVisible'}>Thank you for your message, we will be in touch shortly.</span>
-
-                    <div className='contact_links'>
-                        <a href="https://www.linkedin.com/in/nathankgusky/">
-                            <img src={linkdin} className='contact_linkdin' />
-                        </a>
-                        <a href='https://github.com/Guskyn13'>
-                            <img src={github} className='contact_github' />
-                        </a>
+                <div className='contact-info'>
+                    <div className='contact-leftside'>
+                        <SectionTitle
+                            subheading='Lets get in touch'
+                            heading='Contact'
+                        />
+                        <h2>Email: Nathangusky13@gmail.com</h2>
+                        <h2>Phone: (850) 556 - 3452</h2>
+                        <div className='contact_links'>
+                            <a href="https://www.linkedin.com/in/nathankgusky/">
+                                <img src={linkdin} className='contact-icon' />
+                            </a>
+                            <a href='https://github.com/Guskyn13'>
+                                <img src={github} className='contact-icon' />
+                            </a>
+                        </div>
                     </div>
 
-                </div>
-
-
-                <div className='contact_rightSide'>
-
+                    <div className='contact-rightside'>
+                        <div className='contact-name'>
+                            <input type="text" placeholder='First Name' value={firstName} onChange={e => setFirstName(e.target.value)} />
+                            <input type="text" placeholder='Last Name' value={lastName} onChange={e => setLastName(e.target.value)} />
+                        </div>
+                        <div className='contact-email'>
+                            <input type="email" placeholder='Your Email Address' value={email} onChange={e => setEmail(e.target.value)} />
+                            <input type="text" placeholder='Phone (Optional)'></input>
+                        </div>
+                        <div className='contact-text'>
+                            <textarea className='textarea' placeholder='Your Message' value={message} onChange={e => setMessage(e.target.value)}></textarea>
+                            <button onClick={submit}>Send Message</button>
+                            <span className={emailSent ? 'visible' : 'notVisible'}>Thank you for your message, we will be in touch shortly.</span>
+                        </div>
+                    </div>
                 </div>
             </div>
         </>
